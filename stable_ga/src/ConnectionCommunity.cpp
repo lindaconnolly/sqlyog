@@ -1574,9 +1574,11 @@ ConnectionCommunity::OnConnect(ConnectionInfo *dbname)
     {
 		dbname->m_mysql = mysql;
 		dbname->m_tunnel = tunnel;
-		m_rgbobbkcolor = dbname->m_rgbconn;
-		m_rgbobfgcolor = dbname->m_rgbfgconn;
-
+		if(!pGlobals->m_conrestore)
+		{
+			m_rgbobbkcolor = dbname->m_rgbconn;
+			m_rgbobfgcolor = dbname->m_rgbfgconn;
+		}
 		pGlobals->m_isconnected = wyTrue;
 	}
 	else
@@ -1586,6 +1588,8 @@ ConnectionCommunity::OnConnect(ConnectionInfo *dbname)
 	}
 
 }
+
+
 
 MYSQL* 
 ConnectionCommunity::ConnectToMySQL(ConnectionInfo * coninfo)

@@ -173,7 +173,7 @@ MDIWindow::~MDIWindow()
 }
 
 wyBool
-MDIWindow::Create()
+MDIWindow::Create(wyBool iscon_res, ConnectionInfo* conninfo)
 {
     HANDLE hfile;
 	wyString  title;
@@ -195,10 +195,10 @@ MDIWindow::Create()
 	{
 		title.Sprintf("%s %s", m_title.GetString(), m_tunneltitle.GetString());
 	}
-
+    
    	//tab interface, create a tab with new connection
     //create connection tab control
-	pGlobals->m_pcmainwin->m_conntab->InsertConnectionTab(&title, (LPARAM)this);
+	pGlobals->m_pcmainwin->m_conntab->InsertConnectionTab(&title, (LPARAM)this, iscon_res, conninfo);
 
 	//Setting focus to History tab.
 	//m_pctabmodule->GetActiveTabEditor()->m_pctabmgmt->SelectQueryInfoTab();
@@ -4109,7 +4109,7 @@ MDIWindow::ReConnectSSH(ConnectionInfo *coninfo)
 {
 #ifndef COMMUNITY		
 	wyInt32         sshret;
-    
+    wyString		errormsg;
 	PROCESS_INFORMATION     pi;
 
 	if(coninfo->m_hprocess != INVALID_HANDLE_VALUE)
@@ -4126,21 +4126,16 @@ MDIWindow::ReConnectSSH(ConnectionInfo *coninfo)
 		TerminateProcess(coninfo->m_hprocess, 1);
 	}
 	
-	sshret = CConnectionEnt::CreateSSHSession(coninfo, &pi);
+	sshret = CConnectionEnt::CreateSSHSession(coninfo, &pi, &errormsg);
 
 	if(sshret)
 	{	
-		ShowSSHError(m_hwnd );
+		if(errormsg.GetLength())
+				yog_message(m_hwnd, errormsg.GetAsWideChar(), pGlobals->m_appname.GetAsWideChar(), MB_OK | MB_ICONERROR );
       	coninfo->m_hprocess = INVALID_HANDLE_VALUE;
 		return wyFalse;
 	}
-    else
-    {
-        if(pGlobals->m_hmapfile)
-          VERIFY(CloseHandle(pGlobals->m_hmapfile));
 
-        pGlobals->m_hmapfile = NULL;
-    }
 
 	coninfo->m_hprocess      = pi.hProcess;	
 

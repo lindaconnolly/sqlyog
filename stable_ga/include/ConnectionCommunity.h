@@ -128,6 +128,8 @@ public:
     */
     MYSQL* ConnectToMySQL(ConnectionInfo *conn, Tunnel *tunnel, MYSQL *mysql, wyString &errormsg);
 
+	//MYSQL* ConnectToMySQL(ConnectionInfo * coninfo);
+
 	MYSQL* ConnectToMySQL(ConnectionInfo * coninfo);
 
 	/// Function is called when the connect button is pressed 
@@ -139,6 +141,8 @@ public:
     void    OnConnect(HWND hwnd, ConnectionInfo * dbname);
 
 	void    OnConnect(ConnectionInfo * dbname);
+
+	//void    OnConnect(ConnectionInfo * dbname);
 
 	/// Command handler for connection dialog
 	/**
