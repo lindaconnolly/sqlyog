@@ -1,5 +1,3 @@
-#summary One-sentence summary of this page.
-
 = SQLyog Community Downloads =
 
 
@@ -26,6 +24,4 @@
 [https://s3.amazonaws.com/SQLyog_Community/SQLyog+11.32/sja1132.x86_64.tar.gz SQLyog Job Agent (SJA) for Linux - 11.32 (64 Bit) ]
 
 [https://s3.amazonaws.com/SQLyog_Community/SQLyog+11.32/sja1132.i386.tar.gz SQLyog Job Agent (SJA) for Linux - 11.32 (32 Bit) ]
-
-
 
