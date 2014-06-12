@@ -1,5 +1,17 @@
 = SQLyog Community Downloads =
 
+
+==SQLyog 11.51==
+
+[http://goo.gl/lNkqtM SQLyog Community Edition - 11.51 (64-Bit) ]
+
+[http://goo.gl/MYHjvi SQLyog Community Edition - 11.51 (32-Bit) ]
+
+[http://goo.gl/qiOfPK SQLyog Job Agent (SJA) for Linux - 11.51 (64 Bit) ]
+
+[http://goo.gl/nhnMSF SQLyog Job Agent (SJA) for Linux - 11.51 (32 Bit) ]
+
+
 ==SQLyog 11.5==
 
 [https://s3.amazonaws.com/SQLyog_Community/SQLyog+11.5/SQLyog-11.5.0-1.x64Community.exe SQLyog Community Edition - 11.5 (64-Bit) ]
