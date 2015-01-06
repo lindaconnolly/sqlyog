@@ -2,13 +2,13 @@
 
 ==SQLyog 12.04==
 
-[http://goo.gl/DtrkZU SQLyog Community Edition - 12.04 (64-Bit) ]
+[http://goo.gl/juJTmj SQLyog Community Edition - 12.04 (64-Bit) ]
 
-[http://goo.gl/h0Dw03 SQLyog Community Edition - 12.04 (32-Bit) ]
+[http://goo.gl/ex1QOn SQLyog Community Edition - 12.04 (32-Bit) ]
 
-[http://goo.gl/Poyl4U SQLyog Job Agent (SJA) for Linux - 12.04 (64 Bit) ]
+[http://goo.gl/bH1zQo SQLyog Job Agent (SJA) for Linux - 12.04 (64 Bit) ]
 
-[http://goo.gl/7YUtcE SQLyog Job Agent (SJA) for Linux - 12.04 (32 Bit) ]
+[http://goo.gl/htJ7nt SQLyog Job Agent (SJA) for Linux - 12.04 (32 Bit) ]
 
 
 
