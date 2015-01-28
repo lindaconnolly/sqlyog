@@ -1,5 +1,19 @@
 = SQLyog Community Downloads =
 
+
+==SQLyog 12.05==
+
+[https://s3.amazonaws.com/SQLyog_Community/SQLyog+12.05/SQLyog-12.0.5-0.x64Community.exe SQLyog Community Edition - 12.05 (64-Bit) ]
+
+[https://s3.amazonaws.com/SQLyog_Community/SQLyog+12.05/SQLyog-12.0.5-0.x86Community.exe SQLyog Community Edition - 12.05 (32-Bit) ]
+
+[https://s3.amazonaws.com/SQLyog_Community/SQLyog+12.05/sja1205.x86_64.tar.gz SQLyog Job Agent (SJA) for Linux - 12.05 (64 Bit) ]
+
+[https://s3.amazonaws.com/SQLyog_Community/SQLyog+12.05/sja1205.i386.tar.gz SQLyog Job Agent (SJA) for Linux - 12.05 (32 Bit) ]
+
+
+
+
 ==SQLyog 12.04==
 
 [https://s3.amazonaws.com/SQLyog_Community/SQLyog+12.04/SQLyog-12.0.4-0.x64Community.exe SQLyog Community Edition - 12.04 (64-Bit) ]
